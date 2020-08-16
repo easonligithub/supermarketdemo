@@ -1,0 +1,18 @@
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  datasource:
+    name: supermarket_test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/supermarket_test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: mysql
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mapper/*Mapper.xml
+
